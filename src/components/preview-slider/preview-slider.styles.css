@@ -1,0 +1,44 @@
+.preview-image-slider-container {
+    height: 100%;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.preview-slider-div {
+    width: 500px;
+    height: 640px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.preview-slider-arrow {
+    position: absolute;
+    top: 50%;
+    translate: (0, -50%);
+    font-size: 55px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    background-color: blue;
+}
+
+.preview-left-arrow {
+    left: 32px;
+    
+}
+
+.preview-right-arrow {
+    right: 32px;
+}
+
+.preview-slider-dots-container {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-slider-dot {
+    margin: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
