@@ -2,14 +2,10 @@
     background-color: grey;
     margin-top: 64px;
     width: 100%;
-}
-
-.home-exhibit-container {
-    background-color: yellow;
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-gallery-container {
@@ -17,25 +13,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid red 1px;
 }
 
 .home-featured-title {
     width: 80%;
-    border: solid red 1px;
     background-color:burlywood;
     text-align: center;
-}
-
-.home-gallery {
-    width: 80%;
-    border: solid yellow 1px;
-    background-color: aqua;
-}
-
-.home-slider-container {
-    height: 700px;
-    width: 900px;
-    margin: 0 auto;
-    background-color: aliceblue;
+    border-left: 1px solid #514A4A;
+    border-right: 1px solid #514A4A;
 }

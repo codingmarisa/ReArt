@@ -27,29 +27,31 @@ function PreviewSlider({ slides }) {
 
   return (
     <div className="preview-image-slider-container">
-      {currentIndex === 4 ? (
-        <div>
-          <p>View the Full Exhibit</p>
-        </div>
-      ) : (
+      <div>
+        {currentIndex === 4 ? (
+          <div>
+            <p>View the Full Exhibit</p>
+          </div>
+        ) : (
+          <div
+            className="preview-slider-div"
+            style={{
+              backgroundImage: `url(${items[currentIndex].image})`,
+            }}
+          />
+        )}
         <div
-          className="preview-slider-div"
-          style={{
-            backgroundImage: `url(${items[currentIndex].image})`,
-          }}
-        />
-      )}
-      <div
-        className="preview-slider-arrow preview-left-arrow"
-        onClick={previousSlide}
-      >
-        {'<'}
-      </div>
-      <div
-        className="preview-slider-arrow preview-right-arrow"
-        onClick={nextSlide}
-      >
-        {'>'}
+          className="preview-slider-arrow preview-left-arrow"
+          onClick={previousSlide}
+        >
+          {'<'}
+        </div>
+        <div
+          className="preview-slider-arrow preview-right-arrow"
+          onClick={nextSlide}
+        >
+          {'>'}
+        </div>
       </div>
       <div className="preview-slider-dots-container">
         {items.map((item, itemIndex) => (
@@ -58,11 +60,11 @@ function PreviewSlider({ slides }) {
             key={'slide' + itemIndex}
             onClick={() => goToSlide(itemIndex)}
           >
-            +
+            &#9679;
           </div>
         ))}
         <div className="preview-slider-dot" onClick={() => goToSlide(4)}>
-          +
+          &#9673;
         </div>
       </div>
     </div>
