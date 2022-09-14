@@ -4,7 +4,7 @@ import './preview-slider.styles.css';
 function PreviewSlider({ slides }) {
   const [items, setItems] = useState(slides.items.slice(0, 4));
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeDot, setActiveDot] = useState();
+  const [activeDot, setActiveDot] = useState(0);
 
   const lastSlide = {
     title: 'View the Full Exhibit',
@@ -44,17 +44,37 @@ function PreviewSlider({ slides }) {
     <div className="preview-image-slider-container">
       <div>
         {currentIndex === 4 ? (
-          <div className="preview-last-slide">
+          <div className="preview-slider-div">
             <p>{lastSlide.title}</p>
             <p>{lastSlide.details}</p>
+            <div
+              className="preview-slider-arrow preview-left-arrow"
+              onClick={previousSlide}
+            >
+              &#9664;
+            </div>
+            <div
+              className="preview-slider-arrow preview-right-arrow"
+              onClick={nextSlide}
+            >
+              &#9654;
+            </div>
           </div>
         ) : (
-          <div
-            className="preview-slider-div"
-            style={{
-              backgroundImage: `url(${items[currentIndex].image})`,
-            }}
-          >
+          <div className="preview-slider-div">
+            <img src={items[currentIndex].image} alt="" />
+            <div
+              className="preview-slider-arrow preview-left-arrow"
+              onClick={previousSlide}
+            >
+              &#9664;
+            </div>
+            <div
+              className="preview-slider-arrow preview-right-arrow"
+              onClick={nextSlide}
+            >
+              &#9654;
+            </div>
             <div className="preview-slider-details">
               <p>{items[currentIndex].title}</p>
               {slides.singleArtist ? (
@@ -65,18 +85,6 @@ function PreviewSlider({ slides }) {
             </div>
           </div>
         )}
-        <div
-          className="preview-slider-arrow preview-left-arrow"
-          onClick={previousSlide}
-        >
-          {'<'}
-        </div>
-        <div
-          className="preview-slider-arrow preview-right-arrow"
-          onClick={nextSlide}
-        >
-          {'>'}
-        </div>
       </div>
       <div className="preview-slider-dots-container">
         {items.map((item, itemIndex) => (
