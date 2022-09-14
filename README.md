@@ -1,3 +1,3 @@
 # ReArt
 
-Bringing art to you through the power of React.
+Art - Powered by React

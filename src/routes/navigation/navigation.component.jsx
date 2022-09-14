@@ -8,7 +8,9 @@ const Navigation = () => {
       <div className="header">
         <nav className="nav-container">
           <div className="nav-logo-container">
-            <Link to="/">ReArt</Link>
+            <Link to="/">
+              <span className="logo-text">ReArt</span>
+            </Link>
           </div>
           <div className="nav-links-container">
             <ul className="nav-links-list">

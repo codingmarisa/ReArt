@@ -1,5 +1,4 @@
 .home-container {
-    margin-top: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,9 +14,41 @@
 }
 
 .home-featured-title {
-    width: 95%;
+    width: 100%;
     background-color: var(--color4light);
     text-align: center;
-    border: 3px solid var(--color4lighter);
-    border-bottom: 0;
+    border: 3px solid var(--color4light);
+    border-bottom: 1px solid rgba(var(--color3rgb),0.1);
+}
+
+.home-featured-title h1 {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.home-featured-title a {
+    color: #000;
+}
+
+.home-featured-title p {
+    max-width: 576px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.home-featured-quarter {
+    margin-top: 0;
+    padding-top: 0;
+    letter-spacing: .25rem;
+    font-size: small;
+}
+
+.home-collection-description {
+    letter-spacing: .07rem;
+}
+
+.home-collection-link a {
+    font-size: 0.9rem;
+    text-decoration: none;
 }

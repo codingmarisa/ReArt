@@ -45,6 +45,33 @@ function PreviewSlider({ slides }) {
       <div>
         {currentIndex === 4 ? (
           <div className="preview-slider-div">
+            <div className="preview-slider-dots-container">
+              {items.map((item, itemIndex) => (
+                <div
+                  className={
+                    activeDot === itemIndex
+                      ? 'preview-slider-dot preview-active-dot'
+                      : 'preview-slider-dot'
+                  }
+                  id={`dot${itemIndex}`}
+                  key={'slide' + itemIndex}
+                  onClick={() => dotClickHandler(itemIndex)}
+                >
+                  &#9679;
+                </div>
+              ))}
+              <div
+                className={
+                  activeDot === 4
+                    ? 'preview-slider-dot preview-active-dot'
+                    : 'preview-slider-dot'
+                }
+                id="dot4"
+                onClick={() => dotClickHandler(4)}
+              >
+                &#9679;
+              </div>
+            </div>
             <p>{lastSlide.title}</p>
             <p>{lastSlide.details}</p>
             <div
@@ -62,6 +89,33 @@ function PreviewSlider({ slides }) {
           </div>
         ) : (
           <div className="preview-slider-div">
+            <div className="preview-slider-dots-container">
+              {items.map((item, itemIndex) => (
+                <div
+                  className={
+                    activeDot === itemIndex
+                      ? 'preview-slider-dot preview-active-dot'
+                      : 'preview-slider-dot'
+                  }
+                  id={`dot${itemIndex}`}
+                  key={'slide' + itemIndex}
+                  onClick={() => dotClickHandler(itemIndex)}
+                >
+                  &#9679;
+                </div>
+              ))}
+              <div
+                className={
+                  activeDot === 4
+                    ? 'preview-slider-dot preview-active-dot'
+                    : 'preview-slider-dot'
+                }
+                id="dot4"
+                onClick={() => dotClickHandler(4)}
+              >
+                &#9679;
+              </div>
+            </div>
             <img src={items[currentIndex].image} alt="" />
             <div
               className="preview-slider-arrow preview-left-arrow"
@@ -76,42 +130,21 @@ function PreviewSlider({ slides }) {
               &#9654;
             </div>
             <div className="preview-slider-details">
-              <p>{items[currentIndex].title}</p>
+              <p className="preview-slider-details-title">
+                {items[currentIndex].title}
+              </p>
               {slides.singleArtist ? (
-                <p>{slides.aboutSingleArtist.credit}</p>
+                <p className="preview-slider-details-credit">
+                  {slides.aboutSingleArtist.credit}
+                </p>
               ) : (
-                <p>{items[currentIndex].credit}</p>
+                <p className="preview-slider-details-credit">
+                  {items[currentIndex].credit}
+                </p>
               )}
             </div>
           </div>
         )}
-      </div>
-      <div className="preview-slider-dots-container">
-        {items.map((item, itemIndex) => (
-          <div
-            className={
-              activeDot === itemIndex
-                ? 'preview-slider-dot preview-active-dot'
-                : 'preview-slider-dot'
-            }
-            id={`dot${itemIndex}`}
-            key={'slide' + itemIndex}
-            onClick={() => dotClickHandler(itemIndex)}
-          >
-            &#9679;
-          </div>
-        ))}
-        <div
-          className={
-            activeDot === 4
-              ? 'preview-slider-dot preview-active-dot'
-              : 'preview-slider-dot'
-          }
-          id="dot4"
-          onClick={() => dotClickHandler(4)}
-        >
-          &#9679;
-        </div>
       </div>
     </div>
   );
