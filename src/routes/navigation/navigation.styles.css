@@ -10,7 +10,7 @@
     height: 64px;
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: var(--color4);
 }
 
 .nav-logo-container {
