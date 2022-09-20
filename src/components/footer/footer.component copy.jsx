@@ -1,9 +1,9 @@
 import './footer.styles.css';
 
-function Footer({}) {
+function Footer() {
   return (
     <div className="footer-container">
-      <p>footer</p>
+      <p>Reart &copy; 2022 All Rights Reserved</p>
     </div>
   );
 }

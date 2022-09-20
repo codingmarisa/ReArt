@@ -1,15 +1,11 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './preview-slider.styles.css';
 
 function PreviewSlider({ slides }) {
-  const [items, setItems] = useState(slides.items.slice(0, 4));
+  const [items, setItems] = useState(slides.items.slice(0, 5));
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeDot, setActiveDot] = useState(0);
-
-  const lastSlide = {
-    title: 'View the Full Exhibit',
-    details: 'details go here',
-  };
 
   const previousSlide = () => {
     if (currentIndex === 0) {
@@ -60,20 +56,21 @@ function PreviewSlider({ slides }) {
                   &#9679;
                 </div>
               ))}
-              <div
-                className={
-                  activeDot === 4
-                    ? 'preview-slider-dot preview-active-dot'
-                    : 'preview-slider-dot'
-                }
-                id="dot4"
-                onClick={() => dotClickHandler(4)}
-              >
-                &#9679;
-              </div>
             </div>
-            <p>{lastSlide.title}</p>
-            <p>{lastSlide.details}</p>
+            <div className="preview-last-slide">
+              <Link to="">
+                <div className="preview-last-slide-text">
+                  <p>View the Full Exhibit</p>
+                  <div
+                    className="preview-last-slide-img"
+                    style={{
+                      backgroundImage: `url(${items[4].image})`,
+                    }}
+                  />
+                  <p>Available until December 21st</p>
+                </div>
+              </Link>
+            </div>
             <div
               className="preview-slider-arrow preview-left-arrow"
               onClick={previousSlide}
@@ -104,17 +101,6 @@ function PreviewSlider({ slides }) {
                   &#9679;
                 </div>
               ))}
-              <div
-                className={
-                  activeDot === 4
-                    ? 'preview-slider-dot preview-active-dot'
-                    : 'preview-slider-dot'
-                }
-                id="dot4"
-                onClick={() => dotClickHandler(4)}
-              >
-                &#9679;
-              </div>
             </div>
             <img src={items[currentIndex].image} alt="" />
             <div
