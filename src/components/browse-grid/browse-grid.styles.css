@@ -1,0 +1,29 @@
+.browse-grid-box {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    background-color: var(--color2);
+    border: 1px solid var(--color6);
+}
+
+.browse-grid-details {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+.browse-grid-details-title {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+    color: black;
+    padding: 25px 15px;
+    margin: 0;
+    background-color: var(--color2);
+    width: 100%;
+}
