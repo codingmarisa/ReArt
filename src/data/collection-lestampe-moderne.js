@@ -1,6 +1,4 @@
-// import theKiss from '../assets/collections/lestampe-moderne/the-kiss-475x600.jpg';
-// import portrait from '../assets/collections/lestampe-moderne/portrait-473x600.jpg';
-// import theLaundress from '../assets/collections/lestampe-moderne/the-laundress-476x600.jpg';
+import theKiss from '../assets/collections/lestampe-moderne/the-kiss-429x600.jpg';
 
 const lestampeModerne = {
   title: "L'Estampe Moderne",
@@ -11,7 +9,7 @@ const lestampeModerne = {
     {
       title: 'The Kiss (Le Baiser) (1898)',
       credit: 'Victor Emile Prouvé (French, 1858-1943)',
-      image: null,
+      image: theKiss,
       alt: '',
       aboutArtist:
         'Victor Prouvé was a French painter, sculptor and engraver of the Art Nouveau École de Nancy.',
