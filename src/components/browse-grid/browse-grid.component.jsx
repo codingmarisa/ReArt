@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import './browse-grid.styles.css';
 
-function BrowseGrid({ collection }) {
+function BrowseGrid({ collection, index }) {
   const { title, items } = collection;
 
   return (
-    <div className="browse-grid-box">
-      <img src={items[0].image} alt={items[0].alt} />
-      <div className="browse-grid-details">
-        <p className="browse-grid-details-title">{title}</p>
+    <div className={`browse-grid-box box-${index}`}>
+      <div className="browse-grid-image">
+        <img src={items[0].image} alt={items[0].alt} />
       </div>
+      <div className="browse-grid-details">{title}</div>
     </div>
   );
 }

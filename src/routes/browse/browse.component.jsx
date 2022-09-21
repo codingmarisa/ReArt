@@ -9,8 +9,8 @@ const Browse = () => {
       <h1>Browse</h1>
       <div></div>
       <div class="wrapper">
-        {collections.map((collection) => {
-          return <BrowseGrid collection={collection} />;
+        {collections.map((collection, index) => {
+          return <BrowseGrid collection={collection} index={index} />;
         })}
       </div>
     </div>

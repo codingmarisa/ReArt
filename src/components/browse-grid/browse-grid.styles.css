@@ -1,3 +1,62 @@
+/* container
+<div className="browse-grid-box"> gallery container
+      <div className="browse-grid-img-div"> gallery item
+        <div className="browse-grid-image"> image
+          <img src={items[0].image} alt={items[0].alt} />
+        </div>
+      </div>
+      <div className="browse-grid-details">
+        <p className="browse-grid-details-title">{title}</p>
+      </div>
+    </div> */
+
+.browse-grid-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor:pointer;
+    border: 1px solid var(--color6);
+}
+
+.browse-grid-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.browse-grid-image img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+}
+
+.browse-grid-details {
+    height: 30%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color:black;
+    font-size:25px;
+    opacity: 0.5;
+    background-color: white;
+}
+
+/* .box-0 {
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+
+/*
+browse-grid-box
+browse-grid-img-div
+browse-grid-details
+
+
 .browse-grid-box {
     color: #fff;
     padding: 10px;
@@ -26,4 +85,4 @@
     margin: 0;
     background-color: var(--color2);
     width: 100%;
-}
+} */
