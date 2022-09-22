@@ -6,8 +6,6 @@ import collectionNewYorkSunday from './collection-new-york-sunday';
 import warOfTheWorlds from './collection-the-war-of-the-worlds';
 import wpa from './collection-wpa';
 
-//TODO: add alt text
-
 const collections = [
   collectionFairyTale,
   histoireNaturelle,

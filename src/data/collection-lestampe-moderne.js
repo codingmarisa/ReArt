@@ -1,5 +1,7 @@
 import theKiss from '../assets/collections/lestampe-moderne/the-kiss-429x600.jpg';
 
+//TODO: ALT TEXT
+
 const lestampeModerne = {
   title: "L'Estampe Moderne",
   description:

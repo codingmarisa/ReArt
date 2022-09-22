@@ -2,6 +2,8 @@ import oct201895 from '../assets/collections/new-york-world/oct-20-1895-390x600.
 import nov101895 from '../assets/collections/new-york-world/nov-10-1895-360x600.jpg';
 import feb161896 from '../assets/collections/new-york-world/feb-16-1896-389x600.jpg';
 
+//TODO: ALT TEXT
+
 const collectionNewYorkSunday = {
   title: 'New York Sunday World Posters',
   description:

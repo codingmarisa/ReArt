@@ -1,5 +1,7 @@
 import harlemStreetScene from '../assets/collections/wpa/harlem-street-scene-437x600.jpg';
 
+//TODO: ALT TEXT
+
 const wpa = {
   title: 'Works Progress Administration (WPA) Art',
   description:

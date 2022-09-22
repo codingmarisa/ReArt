@@ -1,7 +1,7 @@
 import leSai from '../assets/collections/histoire-naturelle/le-sai-391x600.jpg';
 
 const histoireNaturelle = {
-  title: 'Histoire naturelle des singes et des makis',
+  title: 'Histoire Naturelle des Singes et des Makis',
   description:
     'Histoire Naturelle de Singes et des Makis written and illustrated by Jean-Baptiste Audebert.',
   singleArtist: true,
@@ -14,25 +14,25 @@ const histoireNaturelle = {
       title: 'Le Sai a gorge blanche (1797)',
       credit: 'Jean-Baptiste Audebert (French, 1759-1800)',
       image: leSai,
-      alt: '',
+      alt: 'Illustration of le Sai a gorge blanche',
     },
     {
       title: 'Le Sajou cornu (1797)',
       credit: 'Jean-Baptiste Audebert (French, 1759-1800)',
       image: null,
-      alt: '',
+      alt: 'Illustration of le Sajou cornu',
     },
     {
       title: 'Le Maki à front blanc (1797)',
       credit: 'Jean-Baptiste Audebert (French, 1759-1800)',
       image: null,
-      alt: '',
+      alt: 'Illustration of le Maki à front blanc',
     },
     {
       title: 'Le Papion, variété B (1797)',
       credit: 'Jean-Baptiste Audebert (French, 1759-1800)',
       image: null,
-      alt: '',
+      alt: 'Illustration of le Papion',
     },
   ],
 };

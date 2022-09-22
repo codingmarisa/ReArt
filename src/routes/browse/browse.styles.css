@@ -1,14 +1,14 @@
 .grid-wrapper { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 10px;
   align-items: center;
   justify-items: center;
   margin: auto;
   max-width: 90%;
-  background-color: aqua;
 }
 
-/* .wrapper > * {
-  max-height: 600px;
-} */
+.browse-title {
+  text-align: center;
+  margin: 2rem;
+}
