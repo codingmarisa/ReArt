@@ -7,8 +7,7 @@ const Browse = () => {
   return (
     <div>
       <h1>Browse</h1>
-      <div></div>
-      <div class="wrapper">
+      <div class="grid-wrapper">
         {collections.map((collection, index) => {
           return <BrowseGrid collection={collection} index={index} />;
         })}

@@ -9,7 +9,9 @@ function BrowseGrid({ collection, index }) {
       <div className="browse-grid-image">
         <img src={items[0].image} alt={items[0].alt} />
       </div>
-      <div className="browse-grid-details">{title}</div>
+      <div className="browse-grid-details">
+        <p>{title}</p>
+      </div>
     </div>
   );
 }

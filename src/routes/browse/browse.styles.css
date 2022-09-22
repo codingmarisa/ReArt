@@ -1,11 +1,14 @@
-.wrapper {
+.grid-wrapper { 
   display: grid;
-  grid-template-columns: repeat(4, minmax(10px, 1fr));
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 10px;
-  padding: 25px;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  max-width: 90%;
+  background-color: aqua;
 }
 
-.wrapper > * {
+/* .wrapper > * {
   max-height: 600px;
-}
+} */
