@@ -4,6 +4,7 @@ import martianEmerges from '../assets/collections/war-of-the-worlds/martian-emer
 
 const nestAndEggs = {
   title: 'The War of the Worlds',
+  exhibitUrl: 'the-war-of-the-worlds',
   description: `First published serially in 1897, H. G. Wells's “The War of the Worlds,” is one of the author's most popular and enduring works. `,
   singleArtist: true,
   aboutSingleArtist: {

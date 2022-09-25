@@ -2,6 +2,7 @@ import leSai from '../assets/collections/histoire-naturelle/le-sai-391x600.jpg';
 
 const histoireNaturelle = {
   title: 'Histoire Naturelle des Singes et des Makis',
+  exhibitUrl: 'histoire-naturelle-des-singes-et-des-makis',
   description:
     'Histoire Naturelle de Singes et des Makis written and illustrated by Jean-Baptiste Audebert.',
   singleArtist: true,

@@ -4,6 +4,7 @@ import harlemStreetScene from '../assets/collections/wpa/harlem-street-scene-437
 
 const wpa = {
   title: 'Works Progress Administration (WPA) Art',
+  exhibitUrl: 'wpa-art',
   description:
     'The Works Progress Administration (WPA) was a United States federal program created during the Great Depression-era to provide relief for out-of-work artists and artisans. Most of the works in this collection were produced at the Harlem Arts Community Center in New York City and dealth with social and racial issues.',
   singleArtist: false,

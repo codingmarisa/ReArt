@@ -58,7 +58,7 @@ function PreviewSlider({ slides }) {
               ))}
             </div>
             <div className="preview-last-slide">
-              <Link to="">
+              <Link to={`browse/${slides.exhibitUrl}`}>
                 <div className="preview-last-slide-text">
                   <p>View the Full Exhibit</p>
                   <div

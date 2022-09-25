@@ -2,6 +2,7 @@ import frontispiece from '../assets/collections/nest-and-eggs/frontispiece-443x6
 
 const nestAndEggs = {
   title: 'Nests and Eggs of Birds of the United States',
+  exhibitUrl: 'nests-and-eggs-of-birds-of-the-united-states',
   description:
     "Nests and Eggs Birds of the United State's by Thomas G. Gentry, Illustrated by Edwin Sheppard.",
   singleArtist: true,

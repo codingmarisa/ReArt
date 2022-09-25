@@ -6,6 +6,7 @@ import tomThumb from '../assets/collections/fairy-tale-illustrations/tom-thumb-4
 
 const collectionFairyTale = {
   title: 'Fairy Tale Illustrations',
+  exhibitUrl: 'fairy-tale-illustrations',
   description:
     'A Series of posters created as part of the Home and School Series by Elizabeth Tyler for the National Child Welfare Association, Inc.',
   singleArtist: true,

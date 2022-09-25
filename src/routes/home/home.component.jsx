@@ -13,7 +13,9 @@ const Home = () => {
       <div className="home-container">
         <div className="home-featured-title">
           <h1>
-            <Link to="">{featuredCollection.title}</Link>
+            <Link to={`browse/${featuredCollection.exhibitUrl}`}>
+              {featuredCollection.title}
+            </Link>
           </h1>
           <p className="home-featured-quarter">
             Featured Exhibit for Fall Quarter
@@ -22,7 +24,9 @@ const Home = () => {
             {featuredCollection.description}
           </p>
           <p className="home-collection-link">
-            <Link to="">&#10214; View Full Exhibit &#10215;</Link>
+            <Link to={`browse/${featuredCollection.exhibitUrl}`}>
+              &#10214; View Full Exhibit &#10215;
+            </Link>
           </p>
         </div>
         <PreviewSlider slides={featuredCollection} />

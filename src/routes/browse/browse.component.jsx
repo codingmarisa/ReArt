@@ -1,18 +1,16 @@
+import { Routes, Route } from 'react-router-dom';
+
 import './browse.styles.css';
 
-import collections from '../../data/collections';
-import BrowseGrid from '../../components/browse-grid/browse-grid.component';
+import BrowseContainer from '../browse-container/browse-container.component';
+import Exhibit from '../exhibit/exhibit.component';
 
 const Browse = () => {
   return (
-    <div>
-      <h1 className="browse-title">Browse Exhibits</h1>
-      <div class="grid-wrapper">
-        {collections.map((collection, index) => {
-          return <BrowseGrid collection={collection} index={index} />;
-        })}
-      </div>
-    </div>
+    <Routes>
+      <Route index element={<BrowseContainer />} />
+      <Route path=":exhibit" element={<Exhibit />} />
+    </Routes>
   );
 };
 

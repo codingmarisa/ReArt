@@ -4,6 +4,7 @@ import theKiss from '../assets/collections/lestampe-moderne/the-kiss-429x600.jpg
 
 const lestampeModerne = {
   title: "L'Estampe Moderne",
+  exhibitUrl: 'lestampe-moderne',
   description:
     "L'Estampe Moderne appeared in 1897-1899 as a series of 24 monthly fascicles, each of 4 original lithographs, priced at 3 francs 50 centimes and printed by Imprimerie Champenois of Paris. Many accomplished European Art Nouveau painters contributed works to this publication.",
   singleArtist: false,
