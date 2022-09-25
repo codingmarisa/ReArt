@@ -31,6 +31,14 @@
     color: #000;
 }
 
+.home-featured-title a:hover {
+    font-style: normal;
+}
+
+.home-featured-title a:active {
+    color: rgba(0,0,0,0.5);
+}
+
 .home-featured-title p {
     max-width: 576px;
     margin: 0 auto;
@@ -51,4 +59,8 @@
 .home-collection-link a {
     font-size: 0.9rem;
     text-decoration: none;
+}
+
+.home-collection-link a:hover {
+    font-weight: bold;
 }

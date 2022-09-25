@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+.preview-last-slide:hover {
+    opacity: 0.6;
+}
+
+.preview-last-slide:active {
+    opacity: 0.3;
+}
+
 .preview-last-slide a {
     text-decoration: none;
     color: #000;
