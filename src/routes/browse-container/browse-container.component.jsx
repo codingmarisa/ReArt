@@ -7,9 +7,14 @@ const BrowseContainer = () => {
   return (
     <div>
       <h1 className="container-title">Browse Exhibits</h1>
-      <div class="grid-wrapper">
+      <div className="grid-wrapper">
         {collections.map((collection, index) => {
-          return <BrowseGrid collection={collection} />;
+          return (
+            <BrowseGrid
+              collection={collection}
+              key={`browseContainer${index}`}
+            />
+          );
         })}
       </div>
     </div>

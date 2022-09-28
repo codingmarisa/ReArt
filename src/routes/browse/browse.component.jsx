@@ -9,7 +9,7 @@ const Browse = () => {
   return (
     <Routes>
       <Route index element={<BrowseContainer />} />
-      <Route path=":exhibit" element={<Exhibit />} />
+      <Route path=":exhibitUrl" element={<Exhibit />} />
     </Routes>
   );
 };
