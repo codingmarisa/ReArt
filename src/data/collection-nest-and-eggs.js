@@ -3,12 +3,14 @@ import frontispiece from '../assets/collections/nest-and-eggs/frontispiece-443x6
 const nestAndEggs = {
   title: 'Nests and Eggs of Birds of the United States',
   exhibitUrl: 'nests-and-eggs-of-birds-of-the-united-states',
-  description:
-    "Nests and Eggs Birds of the United State's by Thomas G. Gentry, Illustrated by Edwin Sheppard.",
-  singleArtist: true,
-  aboutSingleArtist: {
-    credit: 'Edwin L. Sheppard (American, ?-1904)',
-    text: "Nests and Eggs Birds of the United State's by Thomas G. Gentry (1882). Illustrated with detailed chromolithographic title page and 54 chromolithographs of birds and their nests with eggs, nearly all protected with a tissue guards. Illustrated by Mr. Edwin Sheppard of the Academy of Natural Sciences of Philadelphia, acknowledged as the best ornithological artist in America at the time.",
+  exhibitDetails: {
+    description:
+      "Nests and Eggs Birds of the United State's by Thomas G. Gentry, Illustrated by Edwin Sheppard.",
+    singleArtist: true,
+    aboutSingleArtist: {
+      credit: 'Edwin L. Sheppard (American, ?-1904)',
+      text: "Nests and Eggs Birds of the United State's by Thomas G. Gentry (1882). Illustrated with detailed chromolithographic title page and 54 chromolithographs of birds and their nests with eggs, nearly all protected with a tissue guards. Illustrated by Mr. Edwin Sheppard of the Academy of Natural Sciences of Philadelphia, acknowledged as the best ornithological artist in America at the time.",
+    },
   },
   items: [
     {

@@ -7,9 +7,15 @@ import feb161896 from '../assets/collections/new-york-world/feb-16-1896-389x600.
 const collectionNewYorkSunday = {
   title: 'New York Sunday World Posters',
   exhibitUrl: 'new-york-sunday-world-posters',
-  description:
-    'The New York World was a newspaper published in New York City from 1860 until 1931. It was a pioneer in yellow journalism, capturing readers attention with sensation, sports, sex and scandal.',
-  singleArtist: false,
+  exhibitDetails: {
+    description:
+      'The New York World was a newspaper published in New York City from 1860 until 1931. It was a pioneer in yellow journalism, capturing readers attention with sensation, sports, sex and scandal.',
+    singleArtist: false,
+    aboutSingleArtist: {
+      credit: '',
+      text: '',
+    },
+  },
   items: [
     {
       title: 'The New York Sunday World, Feb. 16th (1896)',
