@@ -1,4 +1,4 @@
-# ReArt :art:
+# :art: ReArt
 
 This personal project is in progress. The goal is to implement a collection of virtual exhibits of classical art. The site is powered by React and (at this point of progress) demonstrates command of the following skills:
  
