@@ -11,6 +11,7 @@ const Navigation = () => {
             <Link to="/">
               <span className="logo-text">ReArt</span>
             </Link>
+            <p className="under-construction">(Under Construction)</p>
           </div>
           <div className="nav-links-container">
             <ul className="nav-links-list">

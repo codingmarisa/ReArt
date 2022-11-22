@@ -17,6 +17,12 @@
     padding-left: 1rem;
 }
 
+.nav-logo-container .under-construction {
+    font-size: 1rem;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
 .nav-container a {
     display: block;
     display: inline;

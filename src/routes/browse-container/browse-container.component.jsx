@@ -6,7 +6,7 @@ import BrowseGrid from '../../components/browse-grid/browse-grid.component';
 const BrowseContainer = () => {
   return (
     <div>
-      <h1 className="container-title">Browse Exhibits</h1>
+      <h1 className="browse-container-title">Browse Exhibits</h1>
       <div className="grid-wrapper">
         {collections.map((collection, index) => {
           return (
